@@ -1,0 +1,25 @@
+.contacts-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacts-nav__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts-nav__link {
+    display: block;
+    padding: 32px 0px;
+    color: $secondary-text-color;
+    font-weight: bold;
+    transition: $transition-specs,
+     $transition-specs;
+
+        &:hover, &:focus{
+            color: $accent-color;
+            fill: $accent-color;
+        }
+}

@@ -1,0 +1,27 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav {
+  margin-left: 93px;
+  gap: 50px;
+  &__item {
+    display: block;
+  }
+}
+.site-nav__item {
+  padding: 32px 0px;
+}

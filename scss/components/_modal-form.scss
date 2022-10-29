@@ -1,0 +1,114 @@
+.modal__title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  text-align: center;
+}
+
+.modal-form__box {
+  text-align: left;
+
+  width: 448px;
+}
+
+.modal-form__label {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+// .modal-container {
+//   position: relative;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.modal-form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  transition: border-color $transition-specs;
+  outline: none;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+.modal-prefix {
+  padding-bottom: 4px;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+}
+
+.modal-comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+  opacity: 0.5;
+}
+
+.modal-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.modal-checkbox:checked + .checkbox-icon .icon-uncheck {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox:hover + .checkbox-icon .icon-uncheck,
+.modal-checkbox:focus + .checkbox-icon .icon-uncheck {
+  fill: var(--primary-black-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox:checked + .checkbox-icon .icon-check {
+  opacity: 1;
+}
+.icon-check {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-uncheck {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-black-color);
+}
+.checkbox-text {
+  user-select: none;
+  color: var(--secondary-text-color);
+  line-height: 24px;
+}
+.checkbox-link {
+  color: var(--accent-color);
+}
