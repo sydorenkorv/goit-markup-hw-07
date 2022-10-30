@@ -1,25 +1,29 @@
 .contacts-nav {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 15px;
+  align-items: baseline;
+}
+
+.contacts-nav__item {
+  display: flex;
 }
 
 .contacts-nav__icon {
-    fill: currentColor;
-    margin-right: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contacts-nav__link {
-    display: block;
-    padding: 32px 0px;
-    color: $secondary-text-color;
-    font-weight: bold;
-    transition: $transition-specs,
-     $transition-specs;
+  padding: 32px 0px;
+  color: $secondary-text-color;
+  font-weight: 500;
+  transition: $transition-specs, $transition-specs;
 
-        &:hover, &:focus{
-            color: $accent-color;
-            fill: $accent-color;
-        }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }

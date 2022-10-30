@@ -21,3 +21,25 @@
   height: 50px;
   box-shadow: $box-shadowing-1;
 }
+
+.button.secondary {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $secondary-button-color;
+  color: $primary-text-color;
+  min-width: 73px;
+  height: 38px;
+  border: none;
+  display: inline-block;
+  padding: 6px 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    box-shadow: $box-shadowing-card;
+  }
+}

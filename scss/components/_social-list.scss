@@ -1,6 +1,6 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .social-list__item {
@@ -11,5 +11,4 @@
   height: 44px;
   border-radius: 50%;
   fill: $border-client;
-  gap: 10px;
 }
