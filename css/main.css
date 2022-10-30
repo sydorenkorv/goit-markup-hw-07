@@ -298,6 +298,10 @@ svg {
   gap: 10px;
 }
 
+.social-list__icon {
+  display: block;
+}
+
 .social-list__item {
   display: flex;
   align-items: center;
