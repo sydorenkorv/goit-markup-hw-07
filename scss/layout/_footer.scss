@@ -58,10 +58,11 @@
   gap: 10px;
 }
 
-.page-footer .social-list__item {
+.page-footer .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $transition-specs;
   fill: $primary-white-color;
+  transition: background-color $transition-specs;
+
   &:hover,
   &:focus {
     background-color: $accent-color;

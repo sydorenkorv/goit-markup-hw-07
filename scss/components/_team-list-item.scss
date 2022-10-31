@@ -24,13 +24,3 @@
   padding: 0px 32px;
   margin-top: 16px;
 }
-
-.team-meta .social-list__item {
-  transition: fill $transition-specs, background-color $transition-specs;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    fill: $primary-white-color;
-  }
-}

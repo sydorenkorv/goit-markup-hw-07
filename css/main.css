@@ -239,7 +239,7 @@ svg {
 
 .site-nav__link {
   display: block;
-  color: #757575;
+  color: #212121;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   padding: 32px 0px;
@@ -269,12 +269,7 @@ svg {
   display: flex;
   margin-left: auto;
   align-items: center;
-  gap: 15px;
-  align-items: baseline;
-}
-
-.contacts-nav__item {
-  display: flex;
+  gap: 30px;
 }
 
 .contacts-nav__icon {
@@ -283,6 +278,8 @@ svg {
 }
 
 .contacts-nav__link {
+  display: flex;
+  align-items: center;
   padding: 32px 0px;
   color: #757575;
   font-weight: 500;
@@ -298,18 +295,26 @@ svg {
   gap: 10px;
 }
 
-.social-list__icon {
-  display: block;
-}
-
-.social-list__item {
+.social-list__link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link:hover, .social-list__link:focus {
+  background-color: #2196f3;
+}
+
+.social-list__icon {
+  display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
+  fill: #ffffff;
 }
 
 .subscription {
@@ -424,14 +429,6 @@ svg {
 .team-meta .social-list {
   padding: 0px 32px;
   margin-top: 16px;
-}
-
-.team-meta .social-list__item {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-meta .social-list__item:hover, .team-meta .social-list__item:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
 }
 
 .backdrop {
@@ -732,8 +729,9 @@ svg {
   margin: auto;
 }
 
-.hero__button {
+.hero__button.button {
   margin-top: 30px;
+  width: 216px;
 }
 
 .features-list {
@@ -836,8 +834,7 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
-.client-list_link:hover,
-.client-list_link :focus {
+.client-list_link:hover, .client-list_link:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
@@ -896,12 +893,12 @@ svg {
   gap: 10px;
 }
 
-.page-footer .social-list__item {
+.page-footer .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.page-footer .social-list__item:hover, .page-footer .social-list__item:focus {
+.page-footer .social-list__link:hover, .page-footer .social-list__link:focus {
   background-color: #2196f3;
 }
 
