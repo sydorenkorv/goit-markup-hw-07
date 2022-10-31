@@ -101,7 +101,7 @@
     cursor: pointer;
 
     .modal-form-checkbox:checked + & {
-      background-image: url(../../images/checked.svg);
+      background-image: url(../images/checked.svg);
       background-color: $accent-color;
 
       background-position: center;

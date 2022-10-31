@@ -581,7 +581,7 @@ svg {
   cursor: pointer;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../../images/checked.svg);
+  background-image: url(../images/checked.svg);
   background-color: #2196f3;
   background-position: center;
   background-repeat: no-repeat;
